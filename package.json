@@ -1,0 +1,14 @@
+{
+  "name": "ambulance-corridor",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ambulance corridor: live GPS, priority-aware rerouting, India only. One service serves the built frontend and the socket backend.",
+  "scripts": {
+    "install:all": "npm install --prefix backend && npm install --prefix frontend-app --include=dev",
+    "build": "npm run install:all && npm run build --prefix frontend-app",
+    "start": "node backend/server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
